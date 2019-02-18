@@ -1,59 +1,82 @@
 import {Cite,Text} from 'spectacle';
-import {DarkSlide, CodeSlide} from './slides';
-import RegularComponent from './regular-component';
+import {DarkSlide, CodeSlide,DarkListSlide} from './slides';
+import Jisuanjiqi from './jisuanjiqi';
 
-export default DarkSlide
-
-export const transition = ['zoom']
-
-<h1>Cloud Native</h1>
+# Cloud Native
 
 <h2><Text textColor="white">云原生应用的开发与交付方式</Text></h2>
 
- <Text textColor="white" textAlign="right" textColor="white"> 姬如月 </Text>
+<Text textColor="white" textAlign="right" textColor="Cyan" margin="10" > 姬如月 </Text>
+<Text textColor="white" textAlign="right" textColor="Cyan" margin="10" textSize="1.9rem" > 2019/02/20</Text>
 ---
-export default DarkSlide
-
-export const transition = ['zoom']
-
-# Write your Spectacle Presentations in Markdown
-## And seamlessly use React Components  
-**How sweet is that**  
-**(super sweet)**
+# 主题
+- 计算方式演变史
+- Cloud Native的定义
+- Cloud Native基石
+- 云原生应用的开发与交付方式
 
 ---
 
-![datboi](https://pbs.twimg.com/media/CkjFUyTXEAEysBY.jpg)
+# 计算方式的发展史
 
+<br />
+
+- 机械时期 --> 通用计算
+
+<br />
+
+- 数学模型 --> 物理实现 --> 尽可能抹去物理细节
+
+<br />
+
+- 单点 --> 互联网 --> 集群  --> 云
+
+---
+# 机械时期——计算机器的起源
+
+- 加法器、减法器 希卡特Schickard(1623)和帕斯卡Pascal(1642)
+- 乘除运算器 莱布尼兹Leibnitz(1687)
+
+---
+# 通用计算机
 
 ---
 
-export const transition = ['slide']
+# 查尔斯·巴贝奇  (Charles Babbage） 
+## ——通用计算机之父
+- 差分机一号  Difference Engine No.1
+- 分析机
+- 差分机二号
 
+![巴贝奇](/assets/babeiqi.jpg)
+---
 
-<RegularComponent/>
+<Jisuanjiqi />
+
+---
+# 图灵（Alan Turing）
+## ——计算机科学之父
+- **图灵机**
+- 图灵完备
+- 图灵测试
+![图灵](/assets/tuling.jpeg)
 
 ---
 
-###### Typography
+# lambda演算
+###  可计算函数的精确定义
 
-# Heading 1
+![丘奇](/assets/qiuqi.jpg)
 
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
-
-Standard Text
+#### 阿隆佐·邱奇 （Alonzo Church)
 
 ---
+export default DarkListSlide
+
 
 ###### Standard List
+
+
 
 - Item 1
 - Item 2
@@ -69,12 +92,26 @@ Standard Text
 ---
 export default CodeSlide
 
-```javascript
-class SuperCoolComponent extends React.Component {
-  render() {
-    return (
-      <p>code slide works in markdown too whaaaaat</p>
-    );
-  }
-}
+```flow
+st=>start: Start|past:>http://www.google.com[blank]
+e=>end: End:>http://www.google.com
+op1=>operation: My Operation|past
+op2=>operation: Stuff|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes
+or No?|approved:>http://www.google.com
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|request
+para=>parallel: parallel tasks
+
+st->op1(right)->cond
+cond(yes, right)->c2
+cond(no)->para
+c2(true)->io->e
+c2(false)->e
+
+para(path1, bottom)->sub1(left)->op1
+para(path2, right)->op2->e
+
+st@>op1({"stroke":"Red"})@>cond({"stroke":"Red","stroke-width":6,"arrow-end":"classic-wide-long"})@>c2({"stroke":"Red"})@>op2({"stroke":"Red"})@>e({"stroke":"Red"})
 ```

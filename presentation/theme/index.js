@@ -3,8 +3,8 @@ import createTheme from "../../createTheme";
 const colors = {
   primary: "white",
   secondary: "#1F2022", // almost black w/ blueish tint
-  tertiary: "#fc300f", // bright red
-  quaternary: "#CECECE" // pale gray
+  tertiary: "Aquamarine", // bright red
+  quaternary: "Azure" // pale gray
 };
 
 const theme = createTheme(colors, {
