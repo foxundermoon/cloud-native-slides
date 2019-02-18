@@ -1,0 +1,80 @@
+import {Cite,Text} from 'spectacle';
+import {DarkSlide, CodeSlide} from './slides';
+import RegularComponent from './regular-component';
+
+export default DarkSlide
+
+export const transition = ['zoom']
+
+<h1>Cloud Native</h1>
+
+<h2><Text textColor="white">云原生应用的开发与交付方式</Text></h2>
+
+ <Text textColor="white" textAlign="right" textColor="white"> 姬如月 </Text>
+---
+export default DarkSlide
+
+export const transition = ['zoom']
+
+# Write your Spectacle Presentations in Markdown
+## And seamlessly use React Components  
+**How sweet is that**  
+**(super sweet)**
+
+---
+
+![datboi](https://pbs.twimg.com/media/CkjFUyTXEAEysBY.jpg)
+
+
+---
+
+export const transition = ['slide']
+
+
+<RegularComponent/>
+
+---
+
+###### Typography
+
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+Standard Text
+
+---
+
+###### Standard List
+
+- Item 1
+- Item 2
+- Item 3
+- Item 4
+
+---
+
+> Example Quote
+
+<Cite>Author</Cite>
+
+---
+export default CodeSlide
+
+```javascript
+class SuperCoolComponent extends React.Component {
+  render() {
+    return (
+      <p>code slide works in markdown too whaaaaat</p>
+    );
+  }
+}
+```
