@@ -25,19 +25,19 @@ const theme = createTheme(colors, {
   components: {
     heading: {
       h1: {
-        fontSize: '4rem',
-      },
-      h2: {
         fontSize: '3.5rem',
       },
-      h3: {
+      h2: {
         fontSize: '3rem',
       },
-      h4: {
+      h3: {
         fontSize: '2.5rem',
       },
-      h5: {
+      h4: {
         fontSize: '2rem',
+      },
+      h5: {
+        fontSize: '1.8rem',
       },
       h6: {
         fontSize: '1.5rem',
