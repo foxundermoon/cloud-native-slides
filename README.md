@@ -1,22 +1,6 @@
-# Spectacle Boilerplate
+# cloud native slides
 
-## Contents
-
-- [Reference](#reference)
-- [Getting Started](#getting-started)
-- [Build & Deployment](#build-deployment)
-
-## Reference
-
-The Spectacle core API is available at [https://github.com/FormidableLabs/spectacle/blob/master/README.md](https://github.com/FormidableLabs/spectacle/blob/master/README.md).
-
-For more information about MDX syntax and how it all works, check out the [MDX documentation](https://mdxjs.com/).
-
-### Slides
-
-Slides are separated with `---`.
-
-To customize specific MDX functionality in Spectacle Boilerplate MDX, including what characters are used to demarcate slide breaks, refer to the `loader.js` file. We don't recommend altering this functionality unless necessary.
+# 主题待补充
 
 ## Getting Started
 
@@ -28,12 +12,6 @@ or
 ```bash
 npm install
 ```
-
-Next, run 
-```bash
-rm -R .git
-```
-to remove the existing version control.
 
 Then, to start up the local server, run
 ```bash
