@@ -1,6 +1,7 @@
 import {Cite,Text} from 'spectacle';
 import {DarkSlide, CodeSlide,DarkListSlide} from './slides';
 import Jisuanjiqi from './jisuanjiqi';
+import Embed from './embed';
 
 # Cloud Native
 
@@ -85,44 +86,64 @@ import Jisuanjiqi from './jisuanjiqi';
 
 
 ---
-###### Standard List
+# cloud native演进由来
 
 
+![演进](/assets/cloud-native_history.png)
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
+---
+# cloud native 取名的艺术
+
+<br />
+
+## 无名天地之始
+## 有名万物之母
 
 ---
 
-> Example Quote
+# cloud native 定义
 
-<Cite>Author</Cite>
+- Pivotal最初定义
+- CNCF的定义
+- 未来的定义
 
 ---
-export default CodeSlide
 
-```flow
-st=>start: Start|past:>http://www.google.com[blank]
-e=>end: End:>http://www.google.com
-op1=>operation: My Operation|past
-op2=>operation: Stuff|current
-sub1=>subroutine: My Subroutine|invalid
-cond=>condition: Yes
-or No?|approved:>http://www.google.com
-c2=>condition: Good idea|rejected
-io=>inputoutput: catch something...|request
-para=>parallel: parallel tasks
+# Pivotal最初定义
 
-st->op1(right)->cond
-cond(yes, right)->c2
-cond(no)->para
-c2(true)->io->e
-c2(false)->e
+- [符合12因素应用](https://12factor.net/)
+- 面向微服务架构
+- 自服务敏捷架构
+- 基于API的协作
+- 抗脆弱性
 
-para(path1, bottom)->sub1(left)->op1
-para(path2, right)->op2->e
+---
 
-st@>op1({"stroke":"Red"})@>cond({"stroke":"Red","stroke-width":6,"arrow-end":"classic-wide-long"})@>c2({"stroke":"Red"})@>op2({"stroke":"Red"})@>e({"stroke":"Red"})
-```
+# CNCF最初的定义
+
+- 应用容器化
+- 面向微服务架构
+- 应用支持容器的编排调度
+
+---
+
+# CNCF Cloud Native Definition v1.0
+<br />
+
+[cncf v1.0版本的一个定义或者描述](https://github.com/cncf/toc/blob/master/DEFINITION.md)
+
+---
+
+# cloud native platforms
+
+- Kubernetes
+- Cloud Foundry
+- OpenShift
+
+---
+
+# Landscape
+
+<Embed
+    src="https://landscape.cncf.io/fullscreen=yes" />
+
