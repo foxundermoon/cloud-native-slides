@@ -1,3 +1,5 @@
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/foxundermoon/cloud-native-slides) 
+
 # cloud native slides
 
 # 主题待补充
